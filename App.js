@@ -1,11 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, TextInput, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.secondContainer}>
+          <TextInput style={styles.searchText} placeholder='Busca tu reloj'/>
+          <Button title='Buscar'/>
+      </View>
     </View>
   );
 }
@@ -14,7 +15,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
+  secondContainer: {
+    flexDirection: 'row',
+    marginVertical: 30,
+    width:'100%',
+    alignItems:'center',
+    justifyContent:'center',
+  },
+  searchText: {
+    borderStyle: 'solid',
+    borderBottomWidth: 1,
+    borderBottomColor:'#322214',
+    width: '50%',
+    marginRight: 40,
+  }
 });
+

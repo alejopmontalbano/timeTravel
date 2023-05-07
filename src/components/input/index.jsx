@@ -12,6 +12,7 @@ const Input = ({value, onChangeText, onHandlerButton}) => {
                 value={value}
                 onChangeText={onChangeText} />
             <Button 
+                title="inputBtn"
                 style={stylesInput.btnInput}
                 onPress={onHandlerButton}/>
         </View>

@@ -1,8 +1,5 @@
-// import { Text, View, Button, TextInput, FlatList, TouchableOpacity, Modal } from 'react-native';
-import { View, Button, TextInput, FlatList, TouchableOpacity, Modal } from 'react-native';
-import { Input } from './components/input/index';
-import { Products } from './components/products/index';
-import { CustomModal } from './components/modal/index';
+import { Text, View, Button, TextInput, FlatList, TouchableOpacity, Modal } from 'react-native';
+import { Input, Products, CustomModal } from './components/index.js';
 import { stylesPrincipal } from './styles';
 import { useState } from 'react';
 

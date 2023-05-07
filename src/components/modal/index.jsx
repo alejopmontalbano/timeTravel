@@ -1,9 +1,9 @@
 import {Button, Modal, Text, View} from "react-native";
-
 import React from "react";
 import { styles } from "./styles";
 
 const CustomModal = ({isVisible, selectedProduct, onCancel, onDelete}) => {
+    
     return(
         <Modal visible={isVisible}>
             <View style={styles.containerModal}>
@@ -20,7 +20,7 @@ const CustomModal = ({isVisible, selectedProduct, onCancel, onDelete}) => {
                 <Button title="Eliminar" onPress={onDelete(selectedProduct.id)}></Button>
             </View>
         </Modal>
-    )
+    );
 }
 
 export default CustomModal;

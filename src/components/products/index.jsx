@@ -1,4 +1,4 @@
-import { View, FlatList } from "react-native";
+import { FlatList } from "react-native";
 import ProductItem from './item/index';
 import React from "react";
 import { stylesProducts } from './styles';

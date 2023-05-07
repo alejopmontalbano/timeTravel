@@ -4,6 +4,7 @@ import React from "react";
 import { stylesProductItem } from './styles';
 
 const ProductItem = ({item, onSelectItem}) => {
+    
     return(
         <TouchableOpacity styles={stylesProductItem.touchableContainer} onPress={() => onSelectItem(item.id)}>
             <Text style={stylesProductItem.textProductItem}>

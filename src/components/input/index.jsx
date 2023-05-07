@@ -1,9 +1,9 @@
 import {Button, TextInput, View} from "react-native";
-
 import React from "react";
 import { stylesInput } from "./styles";
 
 const Input = ({value, onChangeText, onHandlerButton}) => {
+    
     return(
         <View style={stylesInput.inputContainer}>
             <TextInput 
